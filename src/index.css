@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", sans-serif;
+  --font-serif: "Noto Serif KR", serif;
+  --color-brand-brown: #3B281E;
+  --color-brand-dark: #261912;
+  --color-brand-gold: #C59B27;
+  --color-brand-goldLight: #F4EBD0;
+  --color-brand-cream: #FDFBF7;
+  --color-brand-sage: #4A6B53;
+  --breakpoint-xs: 24rem;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #FDFBF7;
+  color: #261912;
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B38728 0%, #D4AF37 50%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-card {
+  border: 1px solid rgba(197, 155, 39, 0.35);
+  box-shadow: 0 10px 30px -5px rgba(59, 40, 30, 0.06);
+}
+
+.hero-bg {
+  background: radial-gradient(circle at top right, #FFF9EB 0%, #FDFBF7 55%, #F5EFE6 100%);
+}
